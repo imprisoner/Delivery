@@ -1,0 +1,24 @@
+{
+    "name": "delivery-glo",
+    "version": "1.0.0",
+    "description": "tech trainings",
+    "main": "index.js",
+    "scripts": {
+        "pc_index": "pug --pretty ./src/index.pug -o ./dist/",
+        "pc_restaurant": "pug --pretty ./src/restaurant.pug -o ./dist/",
+        "lc_index": "./node_modules/.bin/lessc ./src/styles/main.less ./dist/styles/main.css",
+        "lc_restaurant": "./node_modules/.bin/lessc ./src/styles/restaurant.less ./dist/styles/restaurant.css",
+        "icongen": "svg-sprite-generate -d ./dist/img/icons -o ./dist/img/icons.svg"
+    },
+    "keywords": [
+        "html",
+        "css",
+        "pug",
+        "less"
+    ],
+    "author": "ImprisoneR",
+    "license": "ISC",
+    "devDependencies": { 
+      "less": "^3.12.2", 
+      "svg-sprite-generator": "^0.0.7" }
+}
