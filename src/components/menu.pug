@@ -1,0 +1,12 @@
+main.menu  
+  .container
+    .menu-title
+      h2.rest-name Тануки
+      .rest-info
+        .rating
+          svg.rating-icon(width="15" height="15")
+            use(xlink:href="./img/icons.svg#star")
+          span.value 4.5
+        .price От 900 ₽
+        .category Пицца
+    include ./menu/cards.pug

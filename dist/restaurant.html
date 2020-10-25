@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="./styles/restaurant.css" rel="stylesheet"/>
+    <title>Delivery - Ресторан</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-top">
+          <h2 class="modal-title">Корзина</h2>
+          <svg class="exit-icon" width="26" height="26">
+            <use xlink:href="./img/icons.svg#exit"></use>
+          </svg>
+        </div>
+        <div class="modal-body">
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+   </button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+     </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"><span class="price-tag"> <strong>1250 ₽</strong></span>
+          <div class="footer-buttons">
+            <button class="order-button">Оформить заказ</button>
+            <button class="cancel-button">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> 
+      <header class="header">
+        <svg class="logo" width="101" height="37">
+          <use xlink:href="./img/icons.svg#logo"></use>
+        </svg>
+        <input class="search search-address" type="text" placeholder="Адрес доставки"/>
+        <div class="buttons">
+          <button class="login"> 
+            <svg class="login-icon button-icon" width="12" height="14">
+              <use xlink:href="./img/icons.svg#user"></use>
+            </svg><span>Войти</span>
+          </button>
+          <button class="basket"> 
+            <svg class="basket-icon button-icon" width="15" height="13">
+              <use xlink:href="./img/icons.svg#basket"></use>
+            </svg><span>Корзина</span>
+          </button>
+        </div>
+      </header>
+    </div>
+    <main class="menu"> 
+      <div class="container">
+        <div class="menu-title">
+          <h2 class="rest-name">Тануки</h2>
+          <div class="rest-info">
+            <div class="rating">
+              <svg class="rating-icon" width="15" height="15">
+                <use xlink:href="./img/icons.svg#star"></use>
+              </svg><span class="value">4.5</span>
+            </div>
+            <div class="price">От 900 ₽</div>
+            <div class="category">Пицца</div>
+          </div>
+        </div>
+        <div class="menu-cards">
+          <div class="menu-card"><img class="card-image" src="./img/foods/1.jpg" alt="img:rolls"/>
+            <div class="card-text">
+              <div class="card-title">
+                <h3 class="menu-title">Ролл угорь стандарт</h3>
+                <p class="card-description">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
+              </div>
+              <div class="card-bottom">
+                <button class="blue-basket"> <span>В корзину</span>
+                  <svg class="basket-icon button-icon" width="15" height="13">
+                    <use xlink:href="./img/icons.svg#basket"></use>
+                  </svg>
+                </button><span class="card-price">250 ₽ </span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card"><img class="card-image" src="./img/foods/2.jpg" alt="img:rolls"/>
+            <div class="card-text">
+              <div class="card-title">
+                <h3 class="menu-title">Ролл угорь стандарт</h3>
+                <p class="card-description">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
+              </div>
+              <div class="card-bottom">
+                <button class="blue-basket"> <span>В корзину</span>
+                  <svg class="basket-icon button-icon" width="15" height="13">
+                    <use xlink:href="./img/icons.svg#basket"></use>
+                  </svg>
+                </button><span class="card-price">395 ₽ </span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card"><img class="card-image" src="./img/foods/3.jpg" alt="img:rolls"/>
+            <div class="card-text">
+              <div class="card-title">
+                <h3 class="menu-title">Окинава стандарт</h3>
+                <p class="card-description"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+              </div>
+              <div class="card-bottom">
+                <button class="blue-basket"> <span>В корзину</span>
+                  <svg class="basket-icon button-icon" width="15" height="13">
+                    <use xlink:href="./img/icons.svg#basket"></use>
+                  </svg>
+                </button><span class="card-price">250 ₽ </span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card"><img class="card-image" src="./img/foods/4.jpg" alt="img:rolls"/>
+            <div class="card-text">
+              <div class="card-title">
+                <h3 class="menu-title">Цезарь маки хl</h3>
+                <p class="card-description">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</p>
+              </div>
+              <div class="card-bottom">
+                <button class="blue-basket"> <span>В корзину</span>
+                  <svg class="basket-icon button-icon" width="15" height="13">
+                    <use xlink:href="./img/icons.svg#basket"></use>
+                  </svg>
+                </button><span class="card-price">250 ₽ </span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card"><img class="card-image" src="./img/foods/5.jpg" alt="img:rolls"/>
+            <div class="card-text">
+              <div class="card-title">
+                <h3 class="menu-title">Ясай маки стандарт 185 г</h3>
+                <p class="card-description">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+              </div>
+              <div class="card-bottom">
+                <button class="blue-basket"> <span>В корзину</span>
+                  <svg class="basket-icon button-icon" width="15" height="13">
+                    <use xlink:href="./img/icons.svg#basket"></use>
+                  </svg>
+                </button><span class="card-price">250 ₽ </span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card"><img class="card-image" src="./img/foods/6.jpg" alt="img:rolls"/>
+            <div class="card-text">
+              <div class="card-title">
+                <h3 class="menu-title">Ролл с креветкой стандарт</h3>
+                <p class="card-description">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+              </div>
+              <div class="card-bottom">
+                <button class="blue-basket"> <span>В корзину</span>
+                  <svg class="basket-icon button-icon" width="15" height="13">
+                    <use xlink:href="./img/icons.svg#basket"></use>
+                  </svg>
+                </button><span class="card-price">250 ₽ </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <footer class="footer">
+        <nav class="footer-nav"><a href="#">
+            <svg class="logo" width="101" height="37">
+              <use xlink:href="./img/icons.svg#logo"></use>
+            </svg></a>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Ресторанам</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Курьерам</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Пресс-центрам</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="social-links"><a href="#"><img class="social-icon" src="./img/icons/instagram.svg"/></a><a href="#">
+            <svg class="social-icon" width="26" height="26">
+              <use xlink:href="./img/icons.svg#facebook"></use>
+            </svg></a><a href="#">
+            <svg class="social-icon" width="36" height="21">
+              <use xlink:href="./img/icons.svg#vk"></use>
+            </svg></a></div>
+      </footer>
+    </div>
+  </body>
+</html>
