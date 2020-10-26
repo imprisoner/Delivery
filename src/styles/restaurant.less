@@ -332,10 +332,13 @@ svg.rating-icon {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
+}
+
+.modal.show {
+    display: flex;
 }
 
 .modal-dialog {
@@ -355,10 +358,15 @@ svg.rating-icon {
 
     svg {
         fill: #000;
+        cursor: pointer;
+
+        &:hover {
+            transition-duration: 0.3s;
+            fill: deepskyblue;
+        }
     }
 }
-
-
+ 
 
 .modal-body {
     margin-bottom: 52px;

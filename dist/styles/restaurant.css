@@ -255,9 +255,12 @@ svg.rating-icon {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+}
+.modal.show {
+  display: flex;
 }
 .modal-dialog {
   width: 780px;
@@ -274,6 +277,11 @@ svg.rating-icon {
 }
 .modal-top svg {
   fill: #000;
+  cursor: pointer;
+}
+.modal-top svg:hover {
+  transition-duration: 0.3s;
+  fill: deepskyblue;
 }
 .modal-body {
   margin-bottom: 52px;

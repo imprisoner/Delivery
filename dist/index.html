@@ -4,12 +4,68 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="./styles/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/normalize.min.css"/>
+    <link rel="stylesheet" href="./styles/animate.min.css"/>
     <title>Delivery - Главная</title>
   </head>
   <body>
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-top">
+          <h2 class="modal-title">Корзина</h2>
+          <svg class="exit-icon" width="26" height="26">
+            <use xlink:href="./img/icons.svg#exit"></use>
+          </svg>
+        </div>
+        <div class="modal-body">
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+   </button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row"><span class="food-name">Ролл угорь стандарт</span><strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button><span class="counter">1</span>
+              <button class="counter-button">+     </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"><span class="price-tag"> <strong>1250 ₽</strong></span>
+          <div class="footer-buttons">
+            <button class="order-button">Оформить заказ</button>
+            <button class="cancel-button">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container"> 
       <header class="header">
-        <svg class="logo" width="101" height="37">
+        <svg class="logo animate__animated animate__fadeInLeft animate__delay-0 5s" width="101" height="37">
           <use xlink:href="./img/icons.svg#logo"></use>
         </svg>
         <input class="search search-address" type="text" placeholder="Адрес доставки"/>
@@ -161,5 +217,6 @@
             </svg></a></div>
       </footer>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

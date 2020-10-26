@@ -4,9 +4,12 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(href="./styles/main.css", rel="stylesheet")
-    
+    link(rel="stylesheet", href="./styles/normalize.min.css")
+    link(rel="stylesheet", href="./styles/animate.min.css")
     title Delivery - Главная
-  body     
+  body
+      include ./components/menu/modal.pug     
       include ./components/header.pug
       include ./components/main.pug
       include ./components/footer.pug
+      script(src="./js/main.js")
